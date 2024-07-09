@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.app,
+.page-title {
+  display: flex;
+}
+
+.app {
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.content {
+  flex: 1;
+}
+
+.page-title,
+.contact-item-title,
+.faqs-subtitle,
+.faqs-question,
+.terms-and-conditions-subtitle {
+  font-weight: bold;
+}
+
+.page-title,
+.footer {
+  justify-content: center;
+}
+.page-title,
+.about-us {
+  margin: 2rem;
+}
+
+.product-card {
+  border: 1px solid rgba(26, 26, 26, 0.3);
+  border-radius: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  height: 100%;
+}
+
+.product-title {
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: rgba(224, 224, 224, 0.5);
+  padding: 1rem 0rem;
+  margin-top: auto;
+}
+
+.footer-item {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-item {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.contact-item,
+.faqs-content,
+.about-us-text,
+.faqs-titles {
+  margin-top: 2rem;
+}
+
+.contact-item-title,
+.contact-item-body,
+.faqs-question,
+.terms-and-conditions-subtitle {
+  margin-bottom: 0;
+}
+
+.faqs {
+  text-align: center;
+}
+
+.faqs-subtitle {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.faqs-answer {
+  margin-bottom: 2rem;
+}
+
+.terms-and-conditions {
+  margin: 2rem 1.5rem;
+}
+
+.about-us-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bread-crumb {
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0 0.1rem;
+}
+
+.breadcrumb-item a {
+  color: black;
+}
+
+.fixed-height-image {
+  object-fit: contain;
+  height: 100%;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.table,
+.continue-shopping-btn,
+.checkout-btn,
+.remove-btn {
+  font-size: 10px;
+}
+
+.counter-button,
+.continue-shopping-btn,
+.checkout-btn,
+.remove-btn {
+  padding: 0.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.counter-button,
+.special-badge {
+  border-radius: 0px;
+}
+
+.counter-button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  text-align: center;
+  margin: 0 0.2rem;
+  font-size: 7px;
+}
+
+.total-price {
+  font-size: 12px;
+}
+
+.page-link,
+.active > .page-link {
+  color: black;
+  font-weight: bold;
+}
+
+.page-link {
+  border: 0;
+}
+
+.active > .page-link {
+  background-color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 48rem) {
+  .about-us {
+    margin: 2rem;
+  }
+
+  .about-us-text {
+    margin-top: 2.5rem;
+  }
+
+  .contact-item {
+    margin-right: 0;
+  }
+
+  .faqs-content {
+    margin-top: 4rem;
+  }
+
+  .terms-and-conditions {
+    margin: 3rem;
+  }
+
+  .bread-crumb {
+    margin: 1rem 3rem;
+  }
+
+  .table,
+  .total-price,
+  .continue-shopping-btn,
+  .checkout-btn {
+    font-size: 1rem;
+  }
+
+  .cart-button,
+  .checkout-btn,
+  .continue-shopping-btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .remove-btn,
+  .counter-button {
+    font-size: 13px;
+  }
+
+  .remove-btn {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .counter-button {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .terms-and-conditions {
+    margin: 1rem 3rem;
+  }
+
+  .app {
+    max-width: 2000px;
+  }
+}
